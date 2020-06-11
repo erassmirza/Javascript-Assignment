@@ -1,5 +1,6 @@
 // =========================> Chapter 01 <=========================
 
+
 // 1. Write a script to greet your website visitor using JS alert box.
 alert("Hello, Welcome to Javascript!");
 
@@ -14,10 +15,11 @@ alert("Welcome to Js Land...\nHappy Coading!");
 alert("Welcome to Js Land...");
 
 // 5. Generate the following message through browser’s developer console
-//  => Open this webpage and press ctrl+shift+i and go to console mode then type
-//     alert("Hello... I can run JS through my web browser's console")
+//  =====> Open this webpage and press ctrl+shift+i and go to console mode then type
+//         alert("Hello... I can run JS through my web browser's console")
 
 // 6. Make use of alerts in your new/existing HTML & CSS project
+//  =====> Yes use in previous Saylani webpage and successfully done
 
 // 7. Practice placement of <script></script> element in following sections of
 //    your project in exercise 6:
@@ -25,10 +27,12 @@ alert("Welcome to Js Land...");
 //          b. Body (before your page’s HTML)
 //          c. Body (inside your page’s HTML)
 //          d. Body (after your page’s HTML
-
+//  =====> Sucessfully done, can see in index.html file byt they are in comment form 
+//         and want to run just remove comment and refresh page
 
 
 // =========================> Chapter 02 <=========================
+
 
 // 1. Declare a variable called username
 var username;
@@ -55,7 +59,8 @@ alert(age);
 alert(course);
 
 // 5. Write a script to display the following alert using one JS variable
-alert("PIZZA\nPIZZ\nPIZ\nPI\nP");
+var msg = "PIZZA\nPIZZ\nPIZ\nPI\nP";
+alert(msg);
 
 // 6. Declare a variable called email and assign to it a string that represents
 //    your Email Address(e.g. example@example.com). Show the below mentioned
@@ -69,10 +74,51 @@ var book = "A smarter way to learn JavaScript";
 alert("I am trying to learn from the Book "+book);
 
 // 8. Write a script to display this in browser through JS
-document.write("Yah! I can write HTML content through JavaScript","<br></br>");
+document.write("Yah! I can write HTML content through JavaScript");
+document.write("<hr></hr>");
 
 // 9. Store following string in a variable and show in alert and browser 
 //    through JS
 alert("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬");
 document.write("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬");
+document.write("<hr></hr>");
+
+
+// =========================> Chapter 03 <=========================
+
+
+// 1. Declare a variable called age & assign to it your age. Show your age in 
+//    an alert box.
+var age = 22;
+alert("I am "+age+" years old")
+
+// 2. Declare & initialize a variable to keep track of how many times a visitor
+//    has visited a web page. Show his/her number of visits on your web page.
+//    For example: “You have visited this site N times”.
+var track_no;
+var track_no = 14;
+alert("You have visited this site "+track_no+" times");
+
+// 3. Declare a variable called birthYear & assign to it your birth year. 
+//    Show the following message in your browser:
+var birthYear = 1998;
+document.write("My birth year is "+birthYear,"<br></br>","Data type of my declared variable is number");
+document.write("<hr></hr>");
+
+// 4. A visitor visits an online clothing store www.xyzClothing.com . Write a 
+//    script to store in variables the following information:
+//          a. Visitor’s name
+//          b. Product title
+//          c. Quantity i.e. how many products a visitor wants to order
+//    Show the following message in your browser: 
+//    “John Doe ordered 5 T-shirt(s) on XYZ Clothing store”.
+var Visitors_name = "John Doe";
+var Product_title = "T-shirt";
+var Quantity = "5";
+document.write("<b>"+Visitors_name+"</b>"+" ordered "+"<b>"+Quantity+" "+Product_title+"</b>"+"(s) on XYZ Clothing store");
+document.write("<hr></hr>");
+
+
+// =========================> Chapter 04 <=========================
+
 
