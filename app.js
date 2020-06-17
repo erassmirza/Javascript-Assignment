@@ -27,7 +27,7 @@ alert("Welcome to Js Land...");
 //          b. Body (before your page’s HTML)
 //          c. Body (inside your page’s HTML)
 //          d. Body (after your page’s HTML
-//  =====> Sucessfully done, can see in index.html file byt they are in comment form 
+//  =====> Sucessfully done, can see in index.html file but they are in comment form 
 //         and want to run just remove comment and refresh page
 
 
@@ -75,13 +75,13 @@ alert("I am trying to learn from the Book "+book);
 
 // 8. Write a script to display this in browser through JS
 document.write("Yah! I can write HTML content through JavaScript");
-document.write("<hr></hr>");
+document.write("<hr />");
 
 // 9. Store following string in a variable and show in alert and browser 
 //    through JS
 alert("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬");
 document.write("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬");
-document.write("<hr></hr>");
+document.write("<hr />");
 
 
 // =========================> Chapter 03 <=========================
@@ -102,8 +102,8 @@ alert("You have visited this site "+track_no+" times");
 // 3. Declare a variable called birthYear & assign to it your birth year. 
 //    Show the following message in your browser:
 var birthYear = 1998;
-document.write("My birth year is "+birthYear,"<br></br>","Data type of my declared variable is number");
-document.write("<hr></hr>");
+document.write("My birth year is "+birthYear,"<br />","Data type of my declared variable is number");
+document.write("<hr />");
 
 // 4. A visitor visits an online clothing store www.xyzClothing.com . Write a 
 //    script to store in variables the following information:
@@ -116,9 +116,37 @@ var Visitors_name = "John Doe";
 var Product_title = "T-shirt";
 var Quantity = "5";
 document.write("<b>"+Visitors_name+"</b>"+" ordered "+"<b>"+Quantity+" "+Product_title+"</b>"+"(s) on XYZ Clothing store");
-document.write("<hr></hr>");
+document.write("<hr />");
 
 
 // =========================> Chapter 04 <=========================
 
 
+// 1. Declare 3 variables in one statement
+var firstvar, secondvar, thirdvar;
+
+// 2. Declare 5 legal & 5 illegal variable names
+var legal1,legal2,legal3,legal4,legal5;      // legal variables
+// var 1a,2b,3c,4d,5e;                         // illegal variables
+
+// 3. Display this in your browser
+//    a) A heading stating “Rules for naming JS variables”
+//    b) Variable names can only contain ______, ______,______ and ______.
+//       For example $my_1stVariable
+//    c) Variables must begin with a ______, ______ or_____.
+//       For example $name, _name or name
+//    d) Variable names are case _________
+//    e) Variable names should not be JS _________
+document.write("<h2>"+"Rules for naming JS variables"+"</h2>"+"<br />");
+document.write("Variable names can only contain numbers, $ and _. For example : $my_1stVariable"+"<br />");
+document.write("Variables must begin with a letter, $ or _. For example : $name, _name or name"+"<br />");
+document.write("Variable names are case sensitive"+"<br />");
+document.write("Variable names should not be JS keywords");
+document.write("<hr />");
+
+
+// =========================> Chapter 05 <=========================
+
+
+// 1. Write a program that take two numbers & add them in a new variable. Show
+//    the result in your browser
