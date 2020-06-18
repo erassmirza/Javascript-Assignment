@@ -443,3 +443,59 @@ document.write("<tr><th></th><th>"+totSubs+"</th><th>"+totObtMar+"</th><th>"+tot
 document.write("</table>");
 document.write("<hr />");
 
+
+// =========================> Chapter 09-11 <=========================
+
+
+// 1. Write a program to take “city” name as input from user. If user enters “Karachi”, welcome the user
+//    like this: “Welcome to city of lights”
+var cityName = prompt("City Name","Enter the city name");
+if (cityName === "Karachi") {
+    document.write("Welcome to city of Lights");
+}
+else{
+    document.write("Welcome to the ",cityName);
+};
+document.write("<hr />");
+
+// 2. Write a program to take “gender” as input from user. If the user is male, give the message: 
+//    Good Morning Sir. If the user is female, give the message: Good Morning Ma’am.
+var gender = prompt("Gender","Enter your gender");
+if (gender === "male") {
+    document.write("Good Morning Sir");
+}
+else if (gender === "female") {
+    document.write("Good Morning Ma'am");
+}
+else{
+    document.write("Enter valid gender");
+};
+document.write("<hr />");
+
+// 3. Write a program to take input color of road traffic signal from the user & show the message
+//    according to this table:
+var colorOfRoad = prompt("Road of Color","Enter the color");
+if (colorOfRoad === "Red" || colorOfRoad === "Yellow" || colorOfRoad === "Green") {
+    document.write("<table style='color: royalblue; border-spacing: 0; text-align: center'>");
+    document.write("<tr style=''><th>Signal color</th><th>Message</th></tr>");
+    document.write("<tr style='background-color: lightblue;'><th>Red</th><td>Must Stop</td></tr>");
+    document.write("<tr><th>Yellow</th><td>Ready to move</td></tr>");
+    document.write("<tr style='background-color: lightblue;'><th>Green</th><td>Move now</td></tr>");
+    document.write("</table>");    
+}
+else{
+    document.write("Enter valid color like Red or Yellow or Green");
+};
+document.write("<hr />");
+
+// 4. Write a program to take input remaining fuel in car (in litres) from user. If the current fuel
+//    is less than 0.25litres, show the message “Please refill the fuel in your car”
+var remFuel = +prompt("Remaining Fuels (in litres)","Enter the remaining fuel number");
+if (remFuel < 0.25) {
+    document.write("Please refill the fuel in your car");
+}
+else{
+    document.write("Enjoy the ride");
+};
+document.write("<hr />");
+
