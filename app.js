@@ -371,3 +371,75 @@ var a = 2, b = 1;
 var result = --a - --b + ++b;
 document.write("<h5>For --a - --b + ++b</h5>");
 document.write("a is ",a+"<br />b is ",b+"<br /> result is ",result);
+var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
+document.write("<h5>For --a - --b + ++b + b--</h5>");
+document.write("a is ",a+"<br />b is ",b+"<br /> result is ",result);
+document.write("<hr />");
+
+// 3. Write a program that takes input a name from user & greet the user.
+var name = prompt("Hi There","Enter your name");
+document.write("Good Evening <b>",name+"</b>");
+document.write("<hr />");
+
+// 5. Write a program to take input a number from user & display it’s multiplication table on your
+//    browser. If user does not enter a new number, multiplication table of 5 should be displayed by 
+//    default.
+var table = +prompt("Table number","Enter the table number");
+if (table === 0) {
+    document.write("<b>Table of 5</b><br /><br />");
+    document.write("5x1=",5*1+"<br />");
+    document.write("5x2=",5*2+"<br />");
+    document.write("5x3=",5*3+"<br />");
+    document.write("5x4=",5*4+"<br />");
+    document.write("5x5=",5*5+"<br />");
+    document.write("5x6=",5*6+"<br />");
+    document.write("5x7=",5*7+"<br />");
+    document.write("5x8=",5*8+"<br />");
+    document.write("5x9=",5*9+"<br />");
+    document.write("5x10=",5*10);
+}
+else{
+    document.write("<b>Table of ",table+"</b><br /><br />");
+    document.write(table+"x1=",table*1+"<br />");
+    document.write(table+"x2=",table*2+"<br />");
+    document.write(table+"x3=",table*3+"<br />");
+    document.write(table+"x4=",table*4+"<br />");
+    document.write(table+"x5=",table*5+"<br />");
+    document.write(table+"x6=",table*6+"<br />");
+    document.write(table+"x7=",table*7+"<br />");
+    document.write(table+"x8=",table*8+"<br />");
+    document.write(table+"x9=",table*9+"<br />");
+    document.write(table+"x10=",table*10);
+};
+document.write("<hr />");
+
+// 6. Take
+//          a) Take three subjects name from user and store them in 3 different variables.
+//          b) Total marks for each subject is 100, store it in another
+//          c) Take obtained marks for first subject from user and stored it in different variable.
+//          d) Take obtained marks for remaining 2 subjects from user and store them in variables.
+//          e) Now calculate total marks and percentage and show the result in browser like this.
+//    (Hint: user table)
+var sub1 = prompt("Subject 1","Enter the name of first subject");
+var sub2 = prompt("Subject 2","Enter the name of second subject");
+var sub3 = prompt("Subject 3","Enter the name of third subject");
+var totalMar = 100;
+var sub1Num = +prompt("Obt number of Subject 1","Enter the number of first subject");
+var sub2Num = +prompt("Obt number of Subject 2","Enter the number of second subject");
+var sub3Num = +prompt("Obt number of Subject 3","Enter the number of third subject");
+var perSub1 = sub1Num / totalMar * 100;
+var perSub2 = sub2Num / totalMar * 100;
+var perSub3 = sub3Num / totalMar * 100;
+var totSubs = totalMar * 3;
+var totObtMar = sub1Num + sub2Num + sub3Num;
+var totPer = ( perSub1 + perSub2 + perSub3 ) / 3;
+document.write("<table>");
+document.write("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th><th>Percentage</th></tr>");
+document.write("<tr><td>"+sub1+"</td><td>"+totalMar+"</td><td>"+sub1Num+"</td><td>"+perSub1+"%</td></tr>");
+document.write("<tr><td>"+sub2+"</td><td>"+totalMar+"</td><td>"+sub2Num+"</td><td>"+perSub2+"%</td></tr>");
+document.write("<tr><td>"+sub3+"</td><td>"+totalMar+"</td><td>"+sub3Num+"</td><td>"+perSub3+"%</td></tr>");
+document.write("<tr><th></th><th>"+totSubs+"</th><th>"+totObtMar+"</th><th>"+totPer+"%</th></tr>");
+document.write("</table>");
+document.write("<hr />");
+
