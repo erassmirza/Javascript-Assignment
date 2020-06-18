@@ -328,3 +328,46 @@ document.write("You will need "+totalSnaks+" "+favoriteSnack+" to last you until
 document.write("<hr />");
 
 
+// =========================> Chapter 06-09 <=========================
+
+
+// 1. Write a program to take a number in a variable, do the required arithmetic to display the following
+//    result in your browser:
+var a = +prompt("Value of a","Enter the value of a");
+document.write("Result:<br />");
+document.write("The value of a is: ",a+"<br />");
+document.write("......................................<br /><br />");
+var a = ++a;
+document.write("The value of ++a is: ",a+"<br />");
+document.write("Now the value of a is: ",a+"<br /><br /><br />");
+document.write("The value of a++ is: ",a+"<br />");
+var a = a++ +1;
+document.write("Now the value of a is: ",a+"<br /><br /><br />");
+var a = --a;
+document.write("The value of --a is: ",a+"<br />");
+document.write("Now the value of a is: ",a+"<br /><br /><br />");
+document.write("The value of a-- is: ",a+"<br />");
+var a = a-- -1;
+document.write("Now the value of a is: ",a+"<br /><br /><br />");
+document.write("<hr />");
+
+// 2. What will be the output in variables a, b & result after execution of the following script:
+//    var a = 2, b = 1; 
+//    var result = --a - --b + ++b + b--;
+//    Explain the output at each stage:
+//    --a;
+//    --a - --b;
+//    --a - --b + ++b;
+//    --a - --b + ++b + b--;
+var a = 2, b = 1;
+var result = --a;
+document.write("<h5>For --a</h5>");
+document.write("a is ",a+"<br />b is ",b+"<br /> result is ",result);
+var a = 2, b = 1;
+var result = --a - --b;
+document.write("<h5>For --a - --b</h5>");
+document.write("a is ",a+"<br />b is ",b+"<br /> result is ",result);
+var a = 2, b = 1;
+var result = --a - --b + ++b;
+document.write("<h5>For --a - --b + ++b</h5>");
+document.write("a is ",a+"<br />b is ",b+"<br /> result is ",result);
