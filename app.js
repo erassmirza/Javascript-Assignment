@@ -499,3 +499,55 @@ else{
 };
 document.write("<hr />");
 
+// 5. Run this script, & check whether alert message would be displayed or not. Record the outputs.
+//    a.
+var a = 4;
+if (++a === 5){
+    alert("given condition for variable a is true");
+}
+//      Yes, Alert message displayed
+//    b.
+var b = 82;
+if (b++ === 83) {
+    alert("given condition for variable b is true");
+}
+//      No, Alert message not displayed
+//    c.
+var c = 12;
+if (c++ === 13){
+alert("condition 1 is true");
+}
+if (c === 13){
+alert("condition 2 is true");
+}
+if (++c < 14){
+alert("condition 3 is true");
+}
+if(c === 14){
+alert("condition 4 is true");
+}
+//      Yes, Alert message displayed ==> (condition 2 is true) also (condition 4 is true)
+//    d.
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost){
+alert("The cost equals");
+}
+//      Yes, Alert message displayed
+//    e.
+if (true){
+    alert("True");
+}
+if (false){
+    alert("False");
+}
+//      Yes, Alert message displayed ==> only first condition (True)
+//    f.
+if("car" < "cat"){
+    alert("car is smaller than cat");
+}
+//      Yes, Alert message displayed
+
+// 6. Write a program to take input the marks obtained in three subjects & total marks. Compute& show
+//    the resulting percentage on your page. Take percentage & compute  grade as per following table:
