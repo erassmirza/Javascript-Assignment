@@ -551,3 +551,32 @@ if("car" < "cat"){
 
 // 6. Write a program to take input the marks obtained in three subjects & total marks. Compute& show
 //    the resulting percentage on your page. Take percentage & compute  grade as per following table:
+var subj1 = +prompt("Obt number of Subject 1","Enter the number of first subject");
+var subj2 = +prompt("Obt number of Subject 2","Enter the number of second subject");
+var subj3 = +prompt("Obt number of Subject 3","Enter the number of third subject");
+var totMarks = +prompt("Overall total Marks","Enter total marks of three subjects");
+var obtmarks = subj1 + subj2 + subj3;
+var totper = obtmarks / totMarks * 100;
+document.write("<h1>Marks Sheet</h1><br />");
+document.write("<h4>Total marks : "+totMarks+"</h4>");
+document.write("<h4>Marks obtained : "+obtmarks+"</h4>");
+document.write("<h4>Percentage : "+totper+"%</h4>");
+if (totper >= 80) {
+    document.write("<h4>Grade : A-one</h4>");
+    document.write("<h4>Remarks : Excellent</h4>");
+}
+else if (totper >= 80) {
+    document.write("<h4>Grade : A</h4>");
+    document.write("<h4>Remarks : Good</h4>");
+}
+else if (totper >= 70) {
+    document.write("<h4>Grade : B</h4>");
+    document.write("<h4>Remarks : You need to improve</h4>");
+}
+else {
+    document.write("<h4>Grade : Fail</h4>");
+    document.write("<h4>Remarks : Sorry</h4>");
+};
+document.write("<hr />");
+
+// 
