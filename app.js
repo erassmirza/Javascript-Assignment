@@ -841,3 +841,55 @@ document.write("<hr />");
 // 8. Write a program to store 3 student names in an array.Take another array to store score of these 
 //    three students. Assume that total marks are 500 for each student, display the scores & percentages 
 //    of students like:
+var studNames = ["Usman", "Uzair", "Saif"];
+var obtMar = [480,320,400];
+var totmarks = 500;
+document.write("Score of "+studNames[0]+" is "+obtMar[0]+". Percentage: "+(obtMar[0]/totmarks)*100+"%<br />");
+document.write("Score of "+studNames[1]+" is "+obtMar[1]+". Percentage: "+(obtMar[1]/totmarks)*100+"%<br />");
+document.write("Score of "+studNames[2]+" is "+obtMar[2]+". Percentage: "+(obtMar[2]/totmarks)*100+"%");
+document.write("<hr />");
+
+// 9. Initialize an array with color names. Display the array elements in your browser.
+//      a. Ask the user what color he/she wants to add to the beginning & add that color to the beginning
+//         of the array. Display the updated array in your browser.
+//      b. Ask the user what color he/she wants to add to the end & add that color to the end of the array.
+//         Display the updated array in your browser.
+//      c. Add two more color to the beginning of the array. Display the updated array in your browser.
+//      d. Delete the first color in the array. Display the updated array in your browser.
+//      e. Delete the last color in the array. Display the updated array in your browser.
+//      f. Ask the user at which index he/she wants to add a color & color name. Then add the color to desired
+//         position/index. . Display the updated array in your browser.
+//      g. Ask the user at which index he/she wants to delete color(s) & how many colors he/she wants to delete.
+//         Then remove the same number of color(s) from user-defined position/index. . Display the updated array 
+//         in your browser.
+var colorNames = ["red", "green", "blue"];
+var insertNew = prompt("Color you want to add in beginning","Enter color name");
+colorNames.unshift(insertNew);
+document.write("After addition new color in beginning of array<br /><b>"+colorNames+"</b><br /><br />");
+var insertNew = prompt("Color you want to add in end","Enter color name");
+colorNames.push(insertNew);
+document.write("After addition new color in end of array<br /><b>"+colorNames+"</b><br /><br />");
+var insertNew = prompt("Two colors you want to add in beginning","Enter first color name");
+var insertNew1 = prompt("Two colors you want to add in beginning","Enter second color name");
+colorNames.unshift(insertNew,insertNew1);
+document.write("After addition two new color in beginning of array<br /><b>"+colorNames+"</b><br /><br />");
+colorNames.shift();
+document.write("After deletion of first color in array<br /><b>"+colorNames+"</b><br /><br />");
+colorNames.pop();
+document.write("After deletion of last color in array<br /><b>"+colorNames+"</b><br /><br />");
+var indexcolor = +prompt("Index of Inserting color","Enter index number where you want to add color");
+var insertNew2 = prompt("Enter color name");
+colorNames.splice(indexcolor,0,insertNew2);
+document.write("After addition of color in array by choice of user<br /><b>"+colorNames+"</b><br /><br />");
+var indexcolor = +prompt("Index of deleting color","Enter index number where you want to start delete");
+var indexcolor1 = +prompt("Index of deleting color","Enter how many numbers you want to delete");
+colorNames.splice(indexcolor,indexcolor1);
+document.write("After deletion of color in array by choice of user<br /><b>"+colorNames+"</b><br /><br />");
+document.write("<hr />");
+
+// 10. Write a program to store student scores in an array & sort the array in ascending order using
+//     Array’s sort method.
+var scoreOfStud = [320,230,480,120];
+document.write("Scores of Students : "+scoreOfStud+"<br />");
+document.write("After sorting above array<br /><b>Ordered Score of Students : "+scoreOfStud.sort()+"</b>");
+document.write("<hr />");
