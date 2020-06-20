@@ -674,3 +674,111 @@ else {
 document.write("<hr />");
 
 
+// =========================> Chapter 12-13 <=========================
+
+
+// 1. Write a program that takes a character (number or string) in a variable & checks whether the given 
+//    input is a number, uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122).
+
+
+// 2. Write a JavaScript program that accept two integers and display the larger. Also show if the two 
+//    integers are equal.
+var firstInt = +prompt("First Number","Enter your number");
+var secInt = +prompt("Second Number","Enter your number");
+if (firstInt > secInt) {
+    document.write("Your first number is greater than second number");
+}
+else if (firstInt === secInt) {
+    document.write("Your first number is equal than second number");
+}
+else {
+    document.write("Your first number is less than second number");
+};
+document.write("<hr />");
+
+// 3. Write a program that takes input a number from user & state whether the number is positive, 
+//    negative or zero.
+var inpNum = +prompt("Check Postive, Negative or Zero","Enter the number");
+if (inpNum > 0) {
+    document.write("Your number is postive");
+}
+else if (inpNum < 0) {
+    document.write("Your number is negative");
+}
+else {
+    document.write("Your number is zero");
+};
+document.write("<hr />");
+
+// 4. Write a program that takes a character (i.e. string of length 1) and returns true if it is a 
+//    vowel, false otherwise
+var charinp = prompt("Vowel test","Enter the character");
+if (charinp === "a" || charinp === "e" || charinp === "i"|| charinp === "o"|| charinp === "u") {
+    document.write("True");
+}
+else if (charinp === "A" || charinp === "E" || charinp === "I"|| charinp === "O"|| charinp === "U") {
+    document.write("True");
+}
+else {
+    document.write("False");
+};
+document.write("<hr />");
+
+// 5. Write a program that
+//      a. Store correct password in a JS variable.
+//      b. Asks user to enter his/her password
+//      c. Validate the two passwords:
+//          i. Check if user has entered password. If not, then give message “ Please enter your password”
+//          ii. Check if both passwords are same. If they are same, show message “Correct! The password you
+//              entered matches the original password”. Show “Incorrect password” otherwise.
+var correctPass = "Pass1285";
+var usrPass = prompt("Enter your password");
+if (usrPass === "") {
+    document.write("Please enter your password");
+}
+else {
+    if (usrPass === correctPass) {
+        document.write("Correct! The password you entered matches the original password");
+    }
+    else {
+        document.write("Incorrect password");
+    };
+};
+document.write("<hr />");
+
+// 6. This if/else statement does not work. Try to fix it:
+//          var greeting;
+//          var hour = 13;
+//          if (hour < 18) {
+//          greeting = "Good day";
+//          else
+//          greeting = "Good evening";
+//          }
+var greeting;
+var hour = 13;
+if (hour < 18) {
+    greeting = "Good day";
+}
+else {
+    greeting = "Good evening";
+}
+
+// 7. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. 
+//    Implement the following case using if, else & else if statements
+var timeInp = +prompt("Time format 24 hours like: 1900 = 7pm","Enter the time");
+if (timeInp >= 0000 && timeInp < 1200) {
+    document.write("Good morning");
+}
+else if (timeInp >= 1200 && timeInp < 1700) {
+    document.write("Good afternoon");
+}
+else if (timeInp >= 1700 && timeInp < 2100) {
+    document.write("Good evening");
+}
+else if (timeInp >= 2100 && timeInp <= 2359) {
+    document.write("Good night");
+}
+else {
+    document.write("Enter valid time");
+};
+document.write("<hr />");
