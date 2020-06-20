@@ -782,3 +782,48 @@ else {
     document.write("Enter valid time");
 };
 document.write("<hr />");
+
+
+// =========================> Chapter 14-16 <=========================
+
+
+// 1. Declare an empty array using JS literal notation to store student names in future.
+
+
+// 2. Declare an empty array using JS object notation to store student names in future.
+
+
+// 3. Declare and initialize a strings array.
+var stringsArr;
+stringsArr = ["Ali", "Hassan", "Huzaifa"];
+
+// 4. Declare and initialize a numbers array.
+var numbersArr;
+numbersArr = [1,2,3,4,5];
+
+// 5. Declare and initialize a boolean array.
+var booleanArr;
+booleanArr = [true,false];
+
+// 6. Declare and initialize a mixed array.
+var mixedArr;
+mixedArr = ["Ali", 18, "BS", true];
+
+// 7. Declare and Initialize an array and store available education qualifications in Pakistan
+//    (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD). Show the listed qualifications in your browser like:
+var eduQual;
+eduQual = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil", "PhD"];
+document.write("<h1>Qualifications</h1>");
+document.write("<ol><li>"+eduQual[0]+"</li>");
+document.write("<li>"+eduQual[1]+"</li>");
+document.write("<li>"+eduQual[2]+"</li>");
+document.write("<li>"+eduQual[3]+"</li>");
+document.write("<li>"+eduQual[4]+"</li>");
+document.write("<li>"+eduQual[5]+"</li>");
+document.write("<li>"+eduQual[6]+"</li>");
+document.write("<li>"+eduQual[7]+"</li></ol>");
+document.write("<hr />");
+
+// 8. Write a program to store 3 student names in an array.Take another array to store score of these 
+//    three students. Assume that total marks are 500 for each student, display the scores & percentages 
+//    of students like:
