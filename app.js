@@ -802,10 +802,10 @@ document.write("<hr />");
 
 
 // 1. Declare an empty array using JS literal notation to store student names in future.
-
+var studentsName = [];
 
 // 2. Declare an empty array using JS object notation to store student names in future.
-
+var studentsName = {};
 
 // 3. Declare and initialize a strings array.
 var stringsArr;
