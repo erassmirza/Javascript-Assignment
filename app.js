@@ -579,4 +579,98 @@ else {
 };
 document.write("<hr />");
 
-// 
+// 7. Guess game:
+//    Store a secret number (ranging from 1 to 10) in a variable. Prompt user to guess the secret number.
+//          a. If user guesses the same number, show “Bingo! Correct answer”.
+//          b. If the guessed number +1 is the secret number, show “Close enough to the correct answer”.
+var guessNum = 5;
+var usrguessNum = +prompt("Guess number","Enter the number from 1-10");
+if (usrguessNum === guessNum) {
+    document.write("Bingo! Correct answer");
+}
+else if (usrguessNum === guessNum+1) {
+    document.write("Close enough to the correct answer");
+}
+else {
+    document.write("Sorry wrong guess");
+};
+document.write("<hr />");
+
+// 8. Write a program to check whether the given number is divisible by 3. Show the message to the
+//    user if the number is divisible by 3.
+var divNum = +prompt("Divisible by 3","Enter your number for check");
+if ((divNum%3)===0) {
+    document.write("Your number is completely divisible by 3");
+}
+else {
+    document.write("Your number is not divisible by 3");
+};
+document.write("<hr />");
+
+// 9. Write a program that checks whether the given input is an even number or an odd number.
+var checkNum = +prompt("Check even or odd number","Enter your number");
+if ((checkNum%2)===0) {
+    document.write("Provided number is even number");
+}
+else {
+    document.write("Provided number is odd number");
+};
+document.write("<hr />");
+
+// 10. Write a program that takes temperature as input and shows a message based on following criteria
+//          a. T > 40 then “It is too hot outside.”
+//          b. T > 30 then “The Weather today is Normal.”
+//          c. T > 20 then “Today’s Weather is cool.”
+//          d. T > 10 then “OMG! Today’s weather is so Cool.”
+var temp = +prompt("Weather Update","Enter the temperature value");
+if (temp > 40) {
+    document.write("It is too hot outside.");
+}
+else if (temp > 30) {
+    document.write("The Weather today is Normal.");
+}
+else if (temp > 20) {
+    document.write("Today’s Weather is cool.");
+}
+else if (temp > 10) {
+    document.write("OMG! Today’s weather is so Cool.");
+}
+else {
+    document.write("Winter Season");
+};
+document.write("<hr />");
+
+// 11. Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input:
+//          a. First number
+//          b. Second number
+//          c. Operation (+, -, *, /, %)
+//     Compute & show the calculated result to user.
+var firstNum = +prompt("First Number","Enter your first number");
+var secNum = +prompt("Second Number","Enter your second number");
+var oper = prompt("Operator +, -, *, /, %","Enter one of the operator");
+if (oper === "+") {
+    totNum = firstNum + secNum;
+    document.write("After addition of "+firstNum+" and "+secNum+" is: "+totNum);
+}
+else if (oper === "-") {
+    totNum = firstNum - secNum;
+    document.write("After subtraction of "+firstNum+" and "+secNum+" is: "+totNum);
+}
+else if (oper === "*") {
+    totNum = firstNum * secNum;
+    document.write("After multiplication of "+firstNum+" and "+secNum+" is: "+totNum);
+}
+else if (oper === "/") {
+    totNum = firstNum / secNum;
+    document.write("After division of "+firstNum+" and "+secNum+" is: "+totNum);
+}
+else if (oper === "%") {
+    totNum = firstNum % secNum;
+    document.write("After moludus of "+firstNum+" and "+secNum+" is: "+totNum);
+}
+else {
+    document.write("Enter valid operator");
+};
+document.write("<hr />");
+
+
